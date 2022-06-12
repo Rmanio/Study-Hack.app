@@ -1,0 +1,18 @@
+<p class="lead" style="margin-bottom: 70px; color: rgba(238,238,238,0.82)">If you don't know about tags, attributes learn here <a style="text-decoration: none; color: cadetblue" href="https://www.w3schools.com/tags/default.asp">Tags</a>.</p>
+
+<div class="form-group">
+  <label for="title">Title</label>
+  <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea name="description" id="description" rows="5" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group">
+  <label for="markdown">Markdown</label>
+  <textarea required name="markdown" id="markdown" rows="15" class="form-control"><%= article.markdown %></textarea>
+</div>
+
+<button type="submit" class="btn btn-read-more">Save</button>
+<a href="/blog" class="btn btn-delete">Cancel</a>
+

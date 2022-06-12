@@ -1,0 +1,105 @@
+<title>Sign up</title>
+<style>
+    body{
+        background: rgb(34, 40, 49);
+    }
+    button[type="submit"]{
+        background: rgb(0, 173, 181);
+        border-color: rgb(0, 173, 181);
+    }
+    button[type="submit"]:hover {
+        background: rgb(58, 130, 133);
+        border-color: rgb(58, 130, 133);
+    }
+    #login-link-foot{color: rgb(0, 173, 181);}
+    #login-link-foot:hover {color: rgb(58, 130, 133);}
+
+    #main-card{
+        box-shadow: 0.5vw 0.5vw 3px lightgray;
+    }
+    .form-group label{
+        display: none;
+    }
+    .form-group input {
+        border: none;
+        border-bottom: 0.1vw grey solid;
+        margin: 0.7vw 0 0.1vw;
+    }
+</style>
+<div class="mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body" id="main-card">
+            <h1 class="text-center mb-3">
+                <i class="fas fa-user-plus"></i> Register
+            </h1>
+
+            <%- include ("./include/messages") %>
+            <form action="/users/register" method="POST">
+
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-control"
+                            placeholder="Enter your name"
+                            value="<%= typeof name != 'undefined' ? name : '' %>"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            class="form-control"
+                            placeholder="Enter your surname"
+                            value="<%= typeof surname != 'undefined' ? surname : '' %>"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Pick an email"
+                            value="<%= typeof email != 'undefined' ? email : '' %>"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="form-control"
+                            placeholder="Create a password"
+                            value="<%= typeof password != 'undefined' ? password : '' %>"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input
+                            type="password"
+                            id="password2"
+                            name="password2"
+                            class="form-control"
+                            placeholder="Confirm your password"
+                            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                    />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3">
+                    Register
+                </button>
+                <button type="reset" class="btn btn-danger btn-block mt-3">
+                    Clear
+                </button>
+            </form>
+            <p class="lead mt-4 lead">Have An Account? <a href="/users/login" id="login-link-foot">Login</a></p>
+        </div>
+    </div>
+</div>

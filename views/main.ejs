@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | <%= user.name%> <%= user.surname%></title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('./include/navbar')%>
+    <div class="content-part">
+        <header>
+            <div id="head-image">
+                <img src="/img/main-header.webp" alt="clock-background">
+                <div class="overlay">background</div>
+            </div>
+            <div id="head-title">
+                <h1>Welcome, <%= user.name%>!</h1>
+            </div>
+            <div id="head-content">
+                <p class="lead"><span>Improve your development skills</span> by using StudyHack that continuously challenge and push your educational practice.</p>
+                <hr>
+                <a href="#section-p" class="btn btn-info text-light">More</a>
+                <a href="#section" class="btn btn-outline-light">Get Started</a>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4 pt-5">
+                    <a href="/main">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/img/section-library.png" class="card-img-top" alt="Library Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Main</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/news">
+                        <div class="col" id="section">
+                            <div class="card h-100">
+                                <img src="/img/section-news.jpeg" class="card-img-top" alt="News Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">News</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/blog">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/img/section-blog.png" class="card-img-top" alt="Blog Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/sources">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/img/section-sources.jpeg" class="card-img-top" alt="Sources Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sources</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-p" id="section-p">
+                    <p><span>Have you tired searching a worthy website which is really helpful?</span> Congratulations, now you're in
+                        StudyHack where you can write blogs, track the recent and relevant news, get the top list of the most visited websites. Enjoy during education... Education makes a door to bright future. Also,
+                        our company is working with another big project <a href="/library" target="_blank" style="color: cadetblue">Library</a>. Try it!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle btn-outline-info my-2 my-sm-0" data-toggle="dropdown">
+            Category
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/news/news/business">Business</a>
+            <a class="dropdown-item" href="/news/news/entertainment">Entertain</a>
+            <a class="dropdown-item" href="/news/news/general">General</a>
+            <a class="dropdown-item" href="/news/news/health">Health</a>
+            <a class="dropdown-item" href="/news/news/technology">Technology</a>
+            <a class="dropdown-item" href="/news/news/sports">Sports</a>
+            <a class="dropdown-item" href="/news/news/science">Science</a>
+
+        </div>
+    </div>
+
+    <div class="collapse navbar-collapse searc-bar" id="navbarSupportedContent">
+
+        <form class="form-inline my-2 my-lg-0" action="/news/search" method="POST">
+            <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" style="width: 522px;"
+                   aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>

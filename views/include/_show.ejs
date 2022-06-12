@@ -1,0 +1,17 @@
+<% for(var i = 0; i < users.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].city %></td>
+    <td><%= users[i].email %></td>
+    <td><%= users[i].gender %></td>
+    <td>
+        <a href="/ADMIN/update-user?id=<%= users[i]._id%>" class="btn border-shadow update blue-white-icon">
+            <span><i class="fa-solid fa-pen-to-square"></i></span>
+        </a>
+        <a class="btn border-shadow delete red-white-icon" data-id=<%= users[i]._id%> >
+            <span><i class="fa-solid fa-trash-can"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>

@@ -1,0 +1,55 @@
+/*HEADER*/
+header{
+    max-width: 90%;
+    height: 35vw;
+}
+
+#head-image img{
+    width: 100vw;
+    height: auto;
+    position: absolute;
+}
+
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 35vw;
+    background: rgba(0,0,0,45%);
+    color: rgba(0,0,0,0);
+}
+
+#head-title h1{
+    color: rgba(238, 238, 238, 0.9);
+    font-size: 3.1em;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.2vw;
+    position: relative;
+    left: 5vw;
+    top: 9vw;
+}
+
+#head-content {
+    max-width: 40%;
+    position: relative;
+    color: #edf2f4;
+    left: 3.5vw;
+    top: 12vw;
+}
+
+#head-content p{
+    font-size: 1.2em;
+    text-indent: 1em;
+}
+
+#head-content p span{
+    font-weight: bold;
+}
+#head-content hr{
+    height: 0.1em;
+}
+#head-content a{
+    font-size: 1em;
+    width: 49.5%;
+}
+/*Finished HEADER*/
