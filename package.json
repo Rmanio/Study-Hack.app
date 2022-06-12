@@ -24,11 +24,16 @@
     "mogoose": "^0.0.1-security",
     "moment": "^2.29.3",
     "mongoose": "^6.3.3",
+    "node": "^17.7.2",
+    "nodemon": "^2.0.16",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "run": "^1.4.0",
     "shortid": "^2.2.16",
     "slugify": "^1.6.5"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
